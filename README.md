@@ -15,6 +15,12 @@
 
 ---
 
+<div align="center">
+  
+  <p align="center">A small, fast and efficient two dimensional Perlin noise generation library with zero dependencies.</p>
+  
+</div>
+
 - [Documentation](https://docs.rs/perlin2d/0.2.0/perlin2d/index.html)
 - [crate.io](https://crates.io/crates/perlin2d)
 
