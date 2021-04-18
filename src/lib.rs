@@ -5,7 +5,7 @@
 //!
 //! ```no run
 //! // For example, to generate a Perlin noise 2D terrain:
-//! use perlin::PerlinNoise2D;
+//! use perlin2d::PerlinNoise2D;
 //!
 //! let perlin_obj = PerlinNoise2D::new(6, 10.0, 0.5, 1.0, 2.0, (100.0, 100.0), 101);
 //!
