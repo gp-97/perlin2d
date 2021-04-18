@@ -1,0 +1,14 @@
+[package]
+name = "perlin2d"
+version = "0.1.0"
+authors = ["Gaurav Patel <GauravPatel97@outlook.com>"]
+edition = "2018"
+license = "Apache-2.0"
+description = "Lightning fast 2D Perlin Noise generator"
+keywords = ["rand", "perlin"]
+categories = ["algorithms", "mathematics"]
+readme = "./README.md"
+repository = "https://www.github.com/gp-97/perlin"
+
+
+[dependencies]
