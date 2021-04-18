@@ -1,5 +1,5 @@
 [package]
-name = "perlin2d"
+name = "perlin"
 version = "0.2.0"
 authors = ["Gaurav Patel <GauravPatel97@outlook.com>"]
 edition = "2018"
