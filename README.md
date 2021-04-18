@@ -13,6 +13,11 @@
 
 </div>
 
+---
+
+- [Documentation](https://docs.rs/perlin2d/0.2.0/perlin2d/index.html)
+- [crate.io](https://crates.io/crates/perlin2d)
+
 ### Example usage
 ```rust
   // For example, to generate a Perlin noise 2D terrain:
