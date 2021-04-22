@@ -12,6 +12,8 @@
 //! let noise = perlin_obj.get_noise(5.0, 10.0);
 //! ```
 
+use std::num::Wrapping;
+
 /// Perlin Noise struct
 ///
 /// Member variables:
@@ -157,9 +159,10 @@ impl PerlinNoise2D {
     }
 
     fn noise(&self, x: i32, y: i32) -> f64 {
-        let mut n: i32 = x + y * 57;
+        let mut n: i64 = x as i64 + y as i64 * 57;
         n = (n << 13) ^ n;
-        let t: i32 = (n * (n * n * 15731 + 789221) + 1376312589) & 0x7fffffff;
+        let t = Wrapping(n) * Wrapping(n) * Wrapping(n * 15731 + 789221) + Wrapping(1376312589);
+        let t = t.0 & 0x7fffffff;
         1.0 - (t as f64) * 0.931322574615478515625e-9
     }
 
