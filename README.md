@@ -25,6 +25,6 @@ A small, fast and efficient two dimensional Perlin noise generation library with
   // For example, to generate a Perlin noise 2D terrain:
   use perlin2d::PerlinNoise2D;
 
-  let perlin = PerlinNoise2D::new(6, 10.0, 0.5, 1.0, 2.0, (100.0, 100.0), 101);
+  let perlin = PerlinNoise2D::new(6, 10.0, 0.5, 1.0, 2.0, (100.0, 100.0), 0.5, 101);
   let noise = perlin.get_noise(5.0, 10.0);
 ```
