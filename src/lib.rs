@@ -191,14 +191,10 @@ impl PerlinNoise2D {
         let n34: f64 = self.noise(x_int + 2, y_int + 2);
 
         // find the noise values of the four corners
-        let x0y0: f64 =
-            0.0625 * (n01 + n02 + n03 + n04) + 0.125 * (n05 + n06 + n07 + n08) + 0.25 * (n09);
-        let x1y0: f64 =
-            0.0625 * (n07 + n12 + n08 + n14) + 0.125 * (n09 + n16 + n02 + n04) + 0.25 * (n06);
-        let x0y1: f64 =
-            0.0625 * (n05 + n06 + n23 + n24) + 0.125 * (n03 + n04 + n09 + n28) + 0.25 * (n08);
-        let x1y1: f64 =
-            0.0625 * (n09 + n16 + n28 + n34) + 0.125 * (n08 + n14 + n06 + n24) + 0.25 * (n04);
+        let x0y0: f64 = 0.0625 * (n01 + n02 + n03 + n04) + 0.125 * (n05 + n06 + n07 + n08) + 0.25 * (n09);
+        let x1y0: f64 = 0.0625 * (n07 + n12 + n08 + n14) + 0.125 * (n09 + n16 + n02 + n04) + 0.25 * (n06);
+        let x0y1: f64 = 0.0625 * (n05 + n06 + n23 + n24) + 0.125 * (n03 + n04 + n09 + n28) + 0.25 * (n08);
+        let x1y1: f64 = 0.0625 * (n09 + n16 + n28 + n34) + 0.125 * (n08 + n14 + n06 + n24) + 0.25 * (n04);
 
         // interpolate between those values according to the x and y fractions
         let v1: f64 = self.interpolate(x0y0, x1y0, x_frac); // interpolate in x
