@@ -166,8 +166,8 @@ impl PerlinNoise2D {
     fn get_value(&self, x: f64, y: f64) -> f64 {
         let x_int: i32 = x as i32;
         let y_int: i32 = y as i32;
-        let x_frac: f64 = x - x_int as f64;
-        let y_frac: f64 = y - y_int as f64;
+        let x_frac: f64 = x - f64::floor(x);
+        let y_frac: f64 = y - f64::floor(y);
 
         // noise values
         let n01: f64 = self.noise(x_int - 1, y_int - 1);
