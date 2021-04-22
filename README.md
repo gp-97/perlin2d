@@ -10,6 +10,7 @@
   [![GitHub Issues](https://img.shields.io/github/issues/gp-97/perlin2d.svg)](https://github.com/gp-97/perlin2d/issues)
   [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/gp-97/perlin2d.svg)](https://github.com/gp-97/perlin2d/pulls)
   ![Crates.io (recent)](https://img.shields.io/crates/dr/perlin2d?style=plastic)
+  ![Github Workflow](https://github.com/gp-97/perlin2d/actions/workflows/main.yml/badge.svg)
 
 </div>
 
