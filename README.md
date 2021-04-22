@@ -17,7 +17,7 @@
 ---
 A small, fast and efficient two dimensional Perlin noise generation library with zero dependencies.
 
-- [Documentation](https://docs.rs/perlin2d/0.2.0/perlin2d/index.html)
+- [Documentation](https://docs.rs/perlin2d/0.2.5/perlin2d/)
 - [crate.io](https://crates.io/crates/perlin2d)
 
 ### Example usage
