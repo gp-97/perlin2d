@@ -29,6 +29,7 @@ use std::num::Wrapping;
 ///
 /// Additional Info:
 /// http://libnoise.sourceforge.net/glossary/
+#[derive(Copy, Clone)]
 pub struct PerlinNoise2D {
     octaves: i32,
     amplitude: f64,
